@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PBL Sorting Visualizer </title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <h1>📦 SORTING  VISUALIZER  </h1>
+
+  <div class="controls">
+    <input type="text" id="arrayInput" placeholder="Enter numbers (e.g. 5,3,8,2,1)" />
+    <button onclick="createArray()">Create Array</button>
+
+    <select id="algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="selection">Selection Sort</option>
+    </select>
+
+    <button onclick="startSort()">Start Sorting</button>
+  </div>
+
+  <div id="explanation" class="explanation">Steps will appear here...</div>
+
+  <div id="array-container"></div>
+  <div id="icon" class="icon">🔄</div>
+
+  <!-- Sorting Theory Section -->
+  <div class="theory">
+    <h2>📖 Sorting Algorithms Theory</h2>
+    <div class="algo">
+      <h3>1. Bubble Sort</h3>
+      <p>
+        Bubble sort compares adjacent elements and swaps them if they are in the wrong order.  
+        After each pass, the largest element "bubbles up" to its correct position.
+      </p>
+    </div>
+    <div class="algo">
+      <h3>2. Insertion Sort</h3>
+      <p>
+        Insertion sort builds the sorted list one element at a time by picking the current element  
+        and inserting it into its correct position in the sorted part of the array.
+      </p>
+    </div>
+    <div class="algo">
+      <h3>3. Selection Sort</h3>
+      <p>
+        Selection sort repeatedly finds the minimum element from the unsorted part  
+        and places it at the beginning of the array.
+      </p>
+    </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>

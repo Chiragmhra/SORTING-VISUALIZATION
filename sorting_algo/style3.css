@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #000000, #000000);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.controls {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input, select, button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  width: 250px;
+}
+
+button {
+  background: #ff1500;
+  color: white;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #ff1500;
+  transform: scale(1.05);
+}
+
+select {
+  background: #fff;
+  color: #333;
+}
+
+.explanation {
+  width: 90%;
+  min-height: 60px;
+  margin: 10px;
+  padding: 12px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+#array-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background: #0099ff;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: all 0.6s ease;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+.box.active {
+  background: #ff1c03;
+  transform: scale(1.2);
+  box-shadow: 0px 6px 15px rgba(255, 25, 0, 0.7);
+}
+
+.box.sorted {
+  background: #40ff00;
+}
+
+.icon {
+  position: absolute;
+  top: 140px;
+  font-size: 32px;
+  display: none;
+  transition: left 0.5s, top 0.5s;
+}
+
+.theory {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.theory h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.algo {
+  margin-bottom: 20px;
+}
+
+.algo h3 {
+  color: #ff1900;
+}
+
+
+.algo {
+  margin-bottom: 20px;
+}
+.algo {
+  margin-bottom: 10px;   /* for increase gap in down  */
+  padding: 15px;         /* for middle spacing */
+  background: #f9f9f9;   /* for background */
+  border-radius: 10px;   /* corners soft  */
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1); /* shadow */
+}
+
+#array-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 200px;  
+}
